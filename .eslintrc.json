@@ -22,6 +22,9 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "arrow-body-style": "off",
+    "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": "off",
     "import/prefer-default-export": "off",
