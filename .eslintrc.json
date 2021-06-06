@@ -22,6 +22,9 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": "off",
+    "import/prefer-default-export": "off",
     "linebreak-style": 0,
     "quotes": [2, "double", { "avoidEscape": true }],
     "import/extensions": [
