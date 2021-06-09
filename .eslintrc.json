@@ -22,6 +22,7 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "react/jsx-props-no-spreading": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "arrow-body-style": "off",
     "react/prop-types": "off",

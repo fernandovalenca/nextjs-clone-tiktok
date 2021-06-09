@@ -34,15 +34,18 @@ export const Info = styled.div`
 `;
 
 export const Author = styled.a`
+  display: flex;
+
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.5rem;
   margin-right: 0.3125rem;
   margin-bottom: 0.3125rem;
-  display: flex;
+
   :hover {
     text-decoration: underline;
   }
+
   > span {
     margin-top: 0.0625rem;
     margin-left: 0.25rem;
@@ -60,13 +63,16 @@ export const Song = styled.div`
   display: flex;
   align-items: flex-end;
   margin-top: 0.3125rem;
+
   a {
     font-weight: 600;
     cursor: pointer;
+
     :hover {
       text-decoration: underline;
     }
   }
+
   img {
     width: 1.125rem;
     height: 1.5625rem;
@@ -76,9 +82,12 @@ export const Song = styled.div`
 
 export const Tag = styled.a`
   cursor: pointer;
-  font-weight: bold;
-  margin-left: 0.25rem;
+
   font-size: 1rem;
+  font-weight: bold;
+
+  margin-left: 0.25rem;
+
   :hover {
     text-decoration: underline;
   }
@@ -89,22 +98,29 @@ export const Content = styled.div`
 `;
 
 export const ActionsContainer = styled.div`
-  visibility: hidden;
-  width: 2.5rem;
-  height: 2.5rem;
-  bottom: 0.9375rem;
-  left: 0.75rem;
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  visibility: hidden;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  bottom: 0.9375rem;
+  left: 0.75rem;
+
+  position: absolute;
 `;
 
 export const VideoContainer = styled.div`
   cursor: pointer;
+
   width: calc(0.56 * (25rem + ((100vw - 48rem) / 1152) * 100));
+
   position: relative;
   margin-top: 0.9375rem;
+
   :hover {
     ${ActionsContainer} {
       visibility: visible;
@@ -112,7 +128,10 @@ export const VideoContainer = styled.div`
   }
 `;
 export const Video = styled.video`
+  height: 400px;
   max-width: 100%;
+
+  background-color: #dcdcdc;
   border-radius: 0.5625rem;
 `;
 
@@ -124,6 +143,7 @@ export const PlayerIcon = styled.img`
 export const Actions = styled.div`
   display: flex;
   align-items: center;
+
   padding: 0 0.625rem;
   margin-top: 0.75rem;
 `;
@@ -131,13 +151,17 @@ export const Actions = styled.div`
 export const Action = styled.div`
   display: flex;
   align-items: center;
+
   font-size: 1.125rem;
   font-weight: 700;
+
   margin-right: 1.5625rem;
+
   cursor: pointer;
+
   img {
-    width: 2rem;
-    height: 2rem;
+    width: 1.25rem;
+    height: 1.25rem;
     margin-right: 0.25rem;
   }
 `;
@@ -145,6 +169,7 @@ export const Action = styled.div`
 export const ButtonContainer = styled.div`
   width: 7.375rem;
   height: 1.75rem;
+
   font-weight: 600;
   font-size: 1rem;
 `;

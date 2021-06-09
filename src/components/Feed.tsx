@@ -1,30 +1,14 @@
-import { FunctionComponent } from "react";
-import { Post } from "./Post";
+import { usePost } from "../hooks/usePost";
+import { Container } from "../styles/components/Feed";
+import { PostCard } from "./PostCard";
 
-interface IFeedProps {
-  posts: [
-    {
-      author: {
-        name: string;
-        username: string;
-        avatarUrl: string;
-        description: string;
-      };
-      tags: [
-        {
-          title: string;
-        },
-      ];
-      videoUrl: string;
-    },
-  ];
-}
+export const Feed = () => {
+  const { posts } = usePost();
 
-export const Feed: FunctionComponent<IFeedProps> = ({ posts }) => {
   return (
     <Container>
-      {posts.map((post, index) => (
-        <Post key={index.toString()} post={post} />
+      {posts?.map((post, index) => (
+        <PostCard key={index.toString()} post={post} />
       ))}
     </Container>
   );

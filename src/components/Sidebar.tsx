@@ -27,7 +27,7 @@ export const Sidebar = () => {
             name: "Will Smith",
             username: "willsmith",
             avatarUrl:
-              "https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1646315618666501~c5_720x720.jpeg?x-expires=1623096000&x-signature=pCXSnvH%2Fm31PP2hOLJDhWptQTuQ%3D",
+              "https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1646315618666501~c5_720x720.jpeg?x-expires=1623279600&x-signature=WN7bxV9c0SOZtGOJJhlx0c2joeo%3D",
           }}
         />
       </Following>
